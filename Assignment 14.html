@@ -1,0 +1,49 @@
+<!-- 
+
+Create a Database name  user_information.
+
+
+In Users table 5 column:  id  , username , age , phone, address, salary , country  ,created_at, updated_at
+
+Find users who live in same country 
+
+Show data  by high to low salary 
+
+Show data who get the highest salary
+
+Show data who get the lowest 
+
+Show how many table you have 
+
+Show me how many users get a salary range of ( 5000 -15000).
+
+
+ -->
+
+
+
+<!-- =============== Find Same Data in MySql ======= -->
+01. SELECT * FROM `user_table` WHERE `country` = "Bangladesh";
+
+
+
+<!-- ======= Short By Table Data in Any Data Base -->
+
+02. SELECT * FROM `user_table` ORDER BY `salary` DESC;
+
+
+
+<!-- =========== Find Max Data / Selory in andy Data Base Table=========== -->
+03. SELECT MAX(`salary`) FROM user_table;
+
+
+<!-- =========== Find Min Data / Selory in andy Data Base Table=========== -->
+04. SELECT MIN(`salary`) FROM user_table;
+
+
+<!-- =========== Find Count Data in andy Data Base Table=========== -->
+05. SELECT COUNT(*)FROM user_table;
+
+
+<!-- =========== Find Min-Max Data Range in andy Data Base Table=========== -->
+06. SELECT * FROM user_table WHERE`salary` BETWEEN 5000 AND 15000;
